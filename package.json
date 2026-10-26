@@ -13,7 +13,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "author": "Lucas Tavares",
+  "author": "Isaque Garcia",
   "license": "ISC",
   "devDependencies": {
     "aos": "^2.3.4",
