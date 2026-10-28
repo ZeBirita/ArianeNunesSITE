@@ -12,6 +12,8 @@ if (contactForm) {
     'SPA dos Pés',
     'Reflexologia',
     'Hidratação com Argila e Parafina',
+    'Taping',
+    'Depilação a Cera',
   ];
   const requestedTreatment = new URLSearchParams(window.location.search).get('tratamento');
   const messageField = contactForm.elements.mensagem;

@@ -59,17 +59,26 @@
             font-size: 2.4rem;
             color: var(--gray-1);
             font-family: var(--font-primary);
-            margin-bottom: 3rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: calc(100% - 11rem);
+            margin: 0;
+            padding: 0 .5rem;
+            box-sizing: border-box;
             text-align: center;
             opacity: 0;
             backface-visibility: hidden;
             transition: all .3s;
             font-weight: 600;
             z-index: 10;
+            line-height: 1.2;
+            overflow-wrap: break-word;
+            transform: translate(-50%, -50%);
         }
     
         &:hover &--caption{
-            transform: translate(0, 10rem);
+            transform: translate(-50%, -50%);
             opacity: 1;
         }
     }
@@ -263,6 +272,42 @@
     }
 
     &__img--10:hover::before{
+        @extend %imgs-hover;
+    }
+
+    &__img--11{
+        @extend %imgs;
+
+        height: 26rem;
+        background-image: url(../img/taping.jpg);
+    }
+
+    &__img--11::before{
+        @extend %img-before;
+
+        background-image: linear-gradient(rgba(#510722, .9),
+        rgba(#892543, .9)) ,url(../img/taping.jpg);
+    }
+
+    &__img--11:hover::before{
+        @extend %imgs-hover;
+    }
+
+    &__img--12{
+        @extend %imgs;
+
+        height: 26rem;
+        background-image: url(../img/depilacaocera.jpg);
+    }
+
+    &__img--12::before{
+        @extend %img-before;
+
+        background-image: linear-gradient(rgba(#510722, .9),
+        rgba(#892543, .9)) ,url(../img/depilacaocera.jpg);
+    }
+
+    &__img--12:hover::before{
         @extend %imgs-hover;
     }
 
